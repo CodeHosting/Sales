@@ -28,3 +28,8 @@ using Android.App;
 // Add some common permissions, these can be removed if not needed
 [assembly: UsesPermission(Android.Manifest.Permission.Internet)]
 [assembly: UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
+/*//SE AGREGO ESTE PERMISO PARA QUE DEJE USAR LA APLICACION SIN NECESIDAD DE USAR UN https en la url base
+//https://forums.xamarin.com/discussion/164771/cleartext-http-traffic-not-permitted
+*/
+
+[assembly: Application(UsesCleartextTraffic = true)]

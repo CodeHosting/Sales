@@ -2,11 +2,10 @@
 
 namespace Sales.ViewModels
 {
-    using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using Common.Models;
-    using Services;
+    using Sales.Services;
     using Xamarin.Forms;
 
     public class ProductsViewModel: BaseViewModel
@@ -31,9 +30,10 @@ namespace Sales.ViewModels
         {
             var response = await this.ApiService.GetList<Product>("http://192.168.100.142:44371", "/api", "/Products");
 
-            if (response.IsSuccess)
+            if (!response.IsSuccess)
             {
                 await Application.Current.MainPage.DisplayAlert("Error", response.Message, "Accept");
+                return;
             }
             var list = (List<Product>)response.Result;
             this.Products = new ObservableCollection<Product>(list);
