@@ -3,14 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:infra="clr-namespace:Sales.Infrastructure"
              mc:Ignorable="d"
+             xmlns:infra="clr-namespace:Sales.Infrastructure"
              x:Class="Sales.App">
     <Application.Resources>
         
         <ResourceDictionary>
             <!-- Locator-->
             <infra:InstanceLocator x:Key="Locator"/>
+            <x:String x:Key="UrlApi">http://192.168.100.142:44371</x:String>
+
         </ResourceDictionary>
 
     </Application.Resources>

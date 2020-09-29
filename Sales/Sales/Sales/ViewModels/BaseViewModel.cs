@@ -5,7 +5,7 @@ namespace Sales.ViewModels
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
 
-    public class BaseViewModel:INotifyPropertyChanged
+    public class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -20,10 +20,9 @@ namespace Sales.ViewModels
             {
                 return;
             }
+
             backingField = value;
             this.OnPropertyChanged(propertyName);
         }
-    
-
     }
 }
