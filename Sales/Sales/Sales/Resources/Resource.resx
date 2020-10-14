@@ -129,4 +129,7 @@
   <data name="NoInternet" xml:space="preserve">
     <value>You have no internet connection</value>
   </data>
+  <data name="Products" xml:space="preserve">
+    <value>Products</value>
+  </data>
 </root>
