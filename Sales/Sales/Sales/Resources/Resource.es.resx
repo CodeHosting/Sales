@@ -132,4 +132,64 @@
   <data name="Products" xml:space="preserve">
     <value>Productos</value>
   </data>
+  <data name="AddProduct" xml:space="preserve">
+    <value>Agregar producto</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="DescriptionPlaceHolder" xml:space="preserve">
+    <value>Describa el producto.</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Precio</value>
+  </data>
+  <data name="PricePlaceHolder" xml:space="preserve">
+    <value>Introduzca el precio del producto ...!</value>
+  </data>
+  <data name="Remarks" xml:space="preserve">
+    <value>Notas:</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="ChangeImage" xml:space="preserve">
+    <value>¡Toca la imagen para cambiarla!</value>
+  </data>
+  <data name="DescriptionError" xml:space="preserve">
+    <value>Debes agregar una descripcion</value>
+  </data>
+  <data name="PriceError" xml:space="preserve">
+    <value>Debes establecer un precio</value>
+  </data>
+  <data name="PriceMinZero" xml:space="preserve">
+    <value>El precio no debe ser menor que cero.</value>
+  </data>
+  <data name="ImageSource" xml:space="preserve">
+    <value>¿Dónde tomas la foto?</value>
+  </data>
+  <data name="FromGallery" xml:space="preserve">
+    <value>De la galería</value>
+  </data>
+  <data name="NewPicture" xml:space="preserve">
+    <value>Tomar una nueva imagen</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>¿Esta seguro de elliminar el articulo?</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
 </root>

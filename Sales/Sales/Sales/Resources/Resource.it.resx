@@ -132,4 +132,64 @@
   <data name="Products" xml:space="preserve">
     <value>Prodotti</value>
   </data>
+  <data name="AddProduct" xml:space="preserve">
+    <value>Aggiungi prodotto</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="DescriptionPlaceHolder" xml:space="preserve">
+    <value>Immettere la descrizione del prodotto.</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Prezzo</value>
+  </data>
+  <data name="PricePlaceHolder" xml:space="preserve">
+    <value>Inserisci il Prezzo del prodotto.</value>
+  </data>
+  <data name="Remarks" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <data name="ChangeImage" xml:space="preserve">
+    <value>Toccare l'immagine per cambiarla!</value>
+  </data>
+  <data name="DescriptionError" xml:space="preserve">
+    <value>Devi aggiungere una descrizione!</value>
+  </data>
+  <data name="PriceError" xml:space="preserve">
+    <value>Devi fissare un prezzo!</value>
+  </data>
+  <data name="PriceMinZero" xml:space="preserve">
+    <value>Il prezzo non deve essere inferiore a zero!</value>
+  </data>
+  <data name="ImageSource" xml:space="preserve">
+    <value>Dove si fa la foto?!</value>
+  </data>
+  <data name="FromGallery" xml:space="preserve">
+    <value>Da raccolta</value>
+  </data>
+  <data name="NewPicture" xml:space="preserve">
+    <value>Scatta una nuova foto</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Elimina</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Sei sicuro di voler cancellar il articolo ?!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sì</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
 </root>

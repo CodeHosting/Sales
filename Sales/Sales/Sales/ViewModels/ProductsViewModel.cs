@@ -4,6 +4,7 @@ namespace Sales.ViewModels
 {
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using System.ComponentModel;
     using System.Windows.Input;
     using Common.Models;
     using GalaSoft.MvvmLight.Command;
@@ -13,12 +14,17 @@ namespace Sales.ViewModels
 
     public class ProductsViewModel: BaseViewModel
     {
+        #region Atributtes
         private ApiService ApiService;
 
         private bool isRefreshing;
+        #endregion
+
+
+        #region Properties
 
         private ObservableCollection<Product> products;
-        public ObservableCollection<Product> Products 
+        public ObservableCollection<Product> Products
         {
             get { return this.products; }
             set { this.SetValue(ref this.products, value); }
@@ -29,14 +35,32 @@ namespace Sales.ViewModels
             get { return this.isRefreshing; }
             set { this.SetValue(ref this.isRefreshing, value); }
         }
+        #endregion
 
-
+        #region Constructors
         public ProductsViewModel()
         {
+            instance = this;
             this.ApiService = new ApiService();
             this.LoadProducts();
         }
 
+        #endregion
+
+        #region Singleton
+        private static ProductsViewModel instance;
+
+        public static ProductsViewModel GetInstance()
+        {
+            if (instance == null)
+            {
+                return new ProductsViewModel();
+            }
+            return instance;
+        }
+        #endregion
+
+        #region Methods
         private async void LoadProducts()
         {
             this.IsRefreshing = true;
@@ -48,7 +72,7 @@ namespace Sales.ViewModels
                 await Application.Current.MainPage.DisplayAlert(Languages.Error, connection.Message, Languages.Accept);
                 return;
             }
-            
+
             var url = Application.Current.Resources["UrlApi"].ToString();
             var prefix = Application.Current.Resources["UrlPrefix"].ToString();
             var productsController = Application.Current.Resources["UrlProductsController"].ToString();
@@ -63,15 +87,18 @@ namespace Sales.ViewModels
             this.IsRefreshing = false;
             var list = (List<Product>)response.Result;
             this.Products = new ObservableCollection<Product>(list);
-            
-        }
 
-        public ICommand RefreshCommand 
+        }
+        #endregion
+
+        #region Commands
+        public ICommand RefreshCommand
         {
-            get 
+            get
             {
                 return new RelayCommand(LoadProducts);
             }
-        }
+        } 
+        #endregion
     }
 }
