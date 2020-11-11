@@ -192,4 +192,13 @@
   <data name="No" xml:space="preserve">
     <value>No</value>
   </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Conferma</value>
+  </data>
+  <data name="EditProduct" xml:space="preserve">
+    <value>Modifica Prodotto</value>
+  </data>
+  <data name="isAvailable" xml:space="preserve">
+    <value>è disponibile.</value>
+  </data>
 </root>

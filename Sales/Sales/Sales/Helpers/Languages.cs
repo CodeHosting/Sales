@@ -134,10 +134,24 @@ namespace Sales.Helpers
             {
                 get { return Resource.Edit; }
             }
+            public static string Confirm
+            {
+                get { return Resource.Confirm; }
+            }
+            public static string EditProduct
+            {
+                get { return Resource.EditProduct; }
+            }
+
+            public static string isAvailable
+            {
+                get { return Resource.isAvailable; }
+            }
+
 
 
 
 
     }
-    
+
 }
